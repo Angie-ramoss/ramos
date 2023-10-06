@@ -1,0 +1,504 @@
+com_sas_ci_acs.ob_boot = {
+    getDatahubId:function(){
+    return com_sas_ci_acs.ob_util.ckR('_SI_DID_1.df2b9cb68c00010112fb657b');
+	},
+    setDatahubId:function(datahubid){
+		com_sas_ci_acs.ob_util_async.ckW('_SI_DID_1.df2b9cb68c00010112fb657b',datahubid,'/','.coppel.com,.www.coppel.com',1759602494005);
+	}
+};
+(function(doc, script) {
+    var js, 
+        fjs = doc.getElementsByTagName(script)[0],
+        add = function(url, id) {
+            if (doc.getElementById(id)) {return;}
+            js = doc.createElement(script);
+            js.async = 1;
+            js.src = url;
+            id && (js.id = id);
+            fjs.parentNode.insertBefore(js, fjs);
+        }
+if(typeof(com_sas_ci_acs.version)==="undefined" || com_sas_ci_acs.version.split('.')[0] < 1){
+    com_sas_ci_acs.ob_util.ckW('_SI_VID_1.df2b9cb68c00010112fb657b','9d824f14615c85333285016c','/','.coppel.com,.www.coppel.com',1759602494005);
+}
+else{
+    com_sas_ci_acs.ob_util_async.ckW('_SI_VID_1.df2b9cb68c00010112fb657b','9d824f14615c85333285016c','/','.coppel.com,.www.coppel.com',1759602494005);
+}
+if(typeof(com_sas_ci_acs.version)==="undefined" || com_sas_ci_acs.version.split('.')[0] < 1){
+    com_sas_ci_acs.ob_util.ckW('_SI_DID_1.df2b9cb68c00010112fb657b','f2949eb7-b598-3d46-bdf3-473477ef6835','/','.coppel.com,.www.coppel.com');
+}
+else{
+    com_sas_ci_acs.ob_util_async.ckW('_SI_DID_1.df2b9cb68c00010112fb657b','f2949eb7-b598-3d46-bdf3-473477ef6835','/','.coppel.com,.www.coppel.com');
+}
+    if(typeof(com_sas_ci_acs.version)==="undefined" || com_sas_ci_acs.version.split('.')[0] < 1){
+        com_sas_ci_acs.ob_util.newvid = true;
+    }
+    else{
+        com_sas_ci_acs.newvid = true;
+    }
+    com_sas_ci_acs.ob_util_async.load_guid = 'd019dd53d6adf92f7823c2b3';
+if(typeof(com_sas_ci_acs.version)==="undefined" || com_sas_ci_acs.version.split('.')[0] < 1){
+    com_sas_ci_acs.ob_util.sckW('_SI_SID_1.df2b9cb68c00010112fb657b','5a6a5ca30cf3a45c4f05c67d','/','.coppel.com,.www.coppel.com',new Date().getTime(),0);
+}
+else{
+    com_sas_ci_acs.ob_util_async.sckW('_SI_SID_1.df2b9cb68c00010112fb657b','5a6a5ca30cf3a45c4f05c67d','/','.coppel.com,.www.coppel.com',new Date().getTime(),0);
+}
+
+
+}(document, 'script'));
+com_sas_ci_acs._ob_configure.prototype.ob_cfg = function()
+{
+   this.ccs='https://eventsingest-prod.ci360.sas.com/t/e/df2b9cb68c00010112fb657b';
+   this.csu='https://delivery-ci360.coppel.com/hserver';
+   this.maxContentChange=10;
+   this.maxJsVarChange=10;
+this.maxMediaEvents=200;this.maxTotalEvents=2000;   this.batchSpots=true;
+   this.timeout=2000;
+   this.maxCCMatches=10;
+   this.customerSpotDelivery=false;
+   this.virtualSpotClassId='';
+   if(typeof(com_sas_ci_acs.version)==="undefined" || com_sas_ci_acs.version.split('.')[0] < 1){
+      this.load_guid = 'd019dd53d6adf92f7823c2b3';
+   }
+   else{
+      this.load_guid = com_sas_ci_acs.ob_util_async.load_guid;
+   }
+   this.thousands_separator=',';
+   this.decimal_separator='.';
+   if(typeof(com_sas_ci_acs.ob_util.setBaseTimestamp)!=="undefined"){
+      com_sas_ci_acs.ob_util.setBaseTimestamp(1696530494006);
+   }
+   this.sendBodyAsHeaderAll=false;
+   this.sendBodyAsHeaderLoad=false;
+   this.trackCancelledEvents=false;
+   this.trackEventResponses=false;
+}
+com_sas_ci_acs._ob_configure.prototype.getVisitorId = function()
+{
+    return com_sas_ci_acs.ob_util.ckR('_SI_VID_1.df2b9cb68c00010112fb657b');
+}
+com_sas_ci_acs._ob_configure.prototype.getDatahubId = function()
+{
+     return com_sas_ci_acs.ob_boot.getDatahubId();
+}
+com_sas_ci_acs._ob_configure.prototype.getSessionId = function()
+{
+    var v=com_sas_ci_acs.ob_util.ckR('_SI_SID_1.df2b9cb68c00010112fb657b');
+    if (v==null) return '';
+    return v.split('.')[0];
+}
+com_sas_ci_acs._ob_configure.prototype.getLastActivity = function()
+{
+    var v=com_sas_ci_acs.ob_util.ckR('_SI_SID_1.df2b9cb68c00010112fb657b');
+    if (v==null) return 0;
+    var a=v.split('.');
+    if (a.length < 2) return 0;
+    return a[1];
+}
+com_sas_ci_acs._ob_configure.prototype.getMaxInactivity = function()
+{
+    var v=com_sas_ci_acs.ob_util.ckR('_SI_SID_1.df2b9cb68c00010112fb657b');
+    if (v==null) return 0;
+    var a=v.split('.');
+    if (a.length < 3) return 0;
+    return a[2];
+}
+com_sas_ci_acs._ob_configure.prototype.updateActivity = function(ts1, ts2)
+{
+ var latestSid=this.getSessionId(); latestSid = latestSid?latestSid:'5a6a5ca30cf3a45c4f05c67d';    com_sas_ci_acs.ob_util.sckW('_SI_SID_1.df2b9cb68c00010112fb657b', latestSid , '/','.coppel.com,.www.coppel.com', ts1, ts2);
+}
+com_sas_ci_acs.ob_event.prototype.termConfiguration = function()
+{
+    var terms = {};
+
+    terms['global'] = {};
+    terms['find'] = {};
+    terms['load'] = {};
+    terms['tsp'] = {};
+    terms['DOMContentLoaded'] = {};
+    terms['click'] = {};
+    terms['exclude'] = {};
+    terms['blur'] = {};
+    terms['change'] = {};
+    terms['cart'] = {};
+    terms['submit'] = {};
+
+if(!com_sas_ci_acs.csz){com_sas_ci_acs.csz=document.documentElement.outerHTML.length;}if(!com_sas_ci_acs.bsz){com_sas_ci_acs.bsz=window.innerWidth+'x'+window.innerHeight;}terms['global']['page_title'] = document.title;
+terms['global']['referrer'] = document.referrer;
+terms['global']['uri'] = document.URL;
+terms['global']['requestedfile'] = com_sas_ci_acs.ob_util.parseUri(document.URL).path;
+terms['load']['tzo'] = new Date().getTimezoneOffset();
+terms['load']['platform'] = navigator.platform;
+terms['load']['cpu'] = navigator.cpuClass;
+terms['load']['port'] = location.port;
+terms['load']['protocol'] = com_sas_ci_acs.ob_util.location();
+terms['load']['flash_enabled'] = com_sas_ci_acs.ob_util.flash().e;
+terms['load']['flash_version'] = com_sas_ci_acs.ob_util.flash().v;
+terms['load']['javascript_enabled'] = true;
+terms['load']['java_enabled'] = com_sas_ci_acs.ob_util.java().e;
+terms['load']['java_version'] = com_sas_ci_acs.ob_util.java().v;
+terms['load']['screen_info'] = screen.width + 'x' + screen.height + '@' + screen.colorDepth;
+if (!com_sas_ci_acs.ob_util.isUndefined(document.documentElement)&&(null!=document.documentElement.getAttribute('lang'))) terms['load']['html.lang'] = document.documentElement.getAttribute('lang');
+if (!com_sas_ci_acs.ob_util.isUndefined(document.documentElement)&&(null!=document.documentElement.getAttribute('xml:lang'))) terms['load']['html.xml:lang'] = document.documentElement.getAttribute('xml:lang');
+terms['load']['browser_language'] = !com_sas_ci_acs.ob_util.isUndefined(navigator.language) ? navigator.language : navigator.browserLanguage;
+terms['load']['character_set'] = com_sas_ci_acs.ob_util.isUndefined(document.charset)?document.characterSet:document.charset;
+terms['load']['csz'] = com_sas_ci_acs.csz;
+terms['load']['bsz'] = com_sas_ci_acs.bsz;
+terms['DOMContentLoaded']['tzo'] = new Date().getTimezoneOffset();
+terms['DOMContentLoaded']['platform'] = navigator.platform;
+terms['DOMContentLoaded']['cpu'] = navigator.cpuClass;
+terms['DOMContentLoaded']['port'] = location.port;
+terms['DOMContentLoaded']['protocol'] = com_sas_ci_acs.ob_util.location();
+terms['DOMContentLoaded']['flash_enabled'] = com_sas_ci_acs.ob_util.flash().e;
+terms['DOMContentLoaded']['flash_version'] = com_sas_ci_acs.ob_util.flash().v;
+terms['DOMContentLoaded']['javascript_enabled'] = true;
+terms['DOMContentLoaded']['java_enabled'] = com_sas_ci_acs.ob_util.java().e;
+terms['DOMContentLoaded']['java_version'] = com_sas_ci_acs.ob_util.java().v;
+terms['DOMContentLoaded']['screen_info'] = screen.width + 'x' + screen.height + '@' + screen.colorDepth;
+if (!com_sas_ci_acs.ob_util.isUndefined(document.documentElement)&&(null!=document.documentElement.getAttribute('lang'))) terms['DOMContentLoaded']['html.lang'] = document.documentElement.getAttribute('lang');
+if (!com_sas_ci_acs.ob_util.isUndefined(document.documentElement)&&(null!=document.documentElement.getAttribute('xml:lang'))) terms['DOMContentLoaded']['html.xml:lang'] = document.documentElement.getAttribute('xml:lang');
+terms['DOMContentLoaded']['browser_language'] = !com_sas_ci_acs.ob_util.isUndefined(navigator.language) ? navigator.language : navigator.browserLanguage;
+terms['DOMContentLoaded']['character_set'] = com_sas_ci_acs.ob_util.isUndefined(document.charset)?document.characterSet:document.charset;
+terms['DOMContentLoaded']['csz'] = com_sas_ci_acs.csz;
+terms['DOMContentLoaded']['bsz'] = com_sas_ci_acs.bsz;
+
+terms['cart']['pe_005f37a6945993691352dcd0833e408e'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#WC_OrderShippingBillingConfirmationPage_div_14:nth-child(1) > div.summary_title:nth-child(2)','innerText','none','');};}();
+terms['cart']['pe_02ea32248e4030c80ae2cc2e645c987d'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#ShopCartPagingDisplay > div.content_table > div.item-quantity > p > input[id^=\"qty\"]','value','none','');};}();
+terms['cart']['pe_1854bb436437f98068cddc948ed28c61'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#ShopCartPagingDisplay > div.content_table > div[id^=\"shoppingCart_rowHeader_product\"] > div[id^=\"WC_OrderItemDetailsf_div_1\"] > a[id^=\"catalogEntry_img\"] > img','src','regex','[0-9][0-9][0-9][0-9][0-9][0-9][0-9]');};}();
+terms['cart']['pe_2546dddc95ff6855ba1fa8d1fd681c26'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#order_details > div.summary_title.col-xs-12','innerText','before','(');};}();
+terms['cart']['pe_29a60cfa3bbaabf62f6a8033b1535a6a'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#order_details > div.orders-wrap > div > div[id^=\"SingleShipment_rowHeader\"] > div[id^=\"WC_OrderItemDetailsSummary\"] > a','innerText','none','');};}();
+terms['cart']['pe_3001188a8305a2307bc86f6f36a50a32'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#order_details > div.orders-wrap > div > div[id^=\"SingleShipment_rowHeader\"] > div[id^=\"WC_OrderItemDetailsSummary\"] > span.price > span.price','innerText','after','$');};}();
+terms['cart']['pe_4170b2984aac514118785047cccb1821'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#box > div#WC_OrderShippingBillingConfirmationPage_div_13 > div#shipping > div#OrderConfirmPagingDisplay > div#order_details > div.orders-wrap > div > div#SingleShipment_rowHeader_product1 > div#WC_OrderItemDetailsSummaryf_div_2_1 > div#WC_OrderItemDetailsSummaryf_div_1_1 > img','src','regex','[0-9][0-9][0-9][0-9][0-9][0-9][0-9]');};}();
+terms['cart']['pe_4b84908134d33b999ca01e57d2b03ad5'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('#currentOrderId','value','none','');};}();
+terms['cart']['pe_4bea368ebf407f420a995785d82581cd'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('td#WC_SingleShipmentOrderTotalsSummary_td_13','innerText','after','$');};}();
+terms['cart']['pe_5b27c24060054ccb6d3573aa7542a892'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#shipping > div.col-xs-12.col-md-8 > div#OrderConfirmPagingDisplay > div#order_details > div > div > div> span.nombre_articulo','innerText','none','');};}();
+terms['cart']['pe_6f7b94857987ae1d6cbf0cc720519678'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#WC_OrderShippingBillingConfirmationPage_div_14 > div:nth-child(2) > p','innerText','regex','\\d+');};}();
+terms['cart']['pe_75b1c0a9a897863c85d32c5d56e5d21d'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#ShopCartPagingDisplay > div.content_table > div[id^=\"shoppingCart_rowHeader_product\"] > div[id^=\"WC_OrderItemDetails\"] > a[id^=\"catalogEntry_name\"] > p','innerText','none','');};}();
+terms['cart']['pe_76d6fd178930297c48cecba65f225099'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('span#WC_OrderShippingBillingConfirmationPage_span_1','innerText','none','');};}();
+terms['cart']['pe_80549be43623b18d93e151608e08c125'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#WC_OrderShippingBillingConfirmationPage_div_14 > div:nth-child(2) > p','innerText','regex','\\((.+)\\)');};}();
+terms['cart']['pe_8cff27a75d952ac3ce164f9aa2857c5b'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('#currentOrderAmount','value','after','$');};}();
+terms['cart']['pe_8dedec2965aef3fc94b0f1dbeda5a026'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#order_details:nth-child(2) > p:nth-child(5)','innerHTML','after_last',';');};}();
+terms['cart']['pe_9f920bb5fee5bd399990031b698368b3'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#WC_CheckoutPaymentAndBillingAddressSummaryf_div_3_1:nth-child(2) > div.row.rc_color:nth-child(2) > div.col-xs-12.col-sm-7:nth-child(2)','innerText','none','');};}();
+terms['cart']['pe_a381071bd14d61234cbb6468fad59946'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#ShopCartPagingDisplay > div.content_table > div.priceTable > div.order_price > span.price','innerText','after','$');};}();
+terms['cart']['pe_a7d0b8560206a4a03f8cea10e180a45f'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#WC_OrderShippingBillingConfirmationPage_div_14 > p:nth-child(4)','innerText','none','');};}();
+terms['cart']['pe_b27a2186a379500c4327bcfbc23bb5bc'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#order_details > div.orders-wrap > div > div[id^=\"SingleShipment_rowHeader\"] > div[id^=\"WC_OrderItemDetailsSummary\"] > p.item-quantity > span:nth-of-type(2)','innerText','after',':');};}();
+terms['cart']['pe_b65c2c6da99cb2911f050a34a5d108b7'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('table#order_total > tbody > tr.delivery_title > td.total_figures.text-right','innerText','after','$');};}();
+terms['cart']['pe_bd2e4f484ad7bd559fe140ac1f2bcee2'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#order_details:nth-child(2) > p:nth-child(5)','innerHTML','between','C.P.__&&__&');};}();
+terms['cart']['pe_cbf95dc0288fe82b3440fbb259054fc7'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#order_details > div.orders-wrap > div > div[id^=\"SingleShipment_rowHeader\"] > div[id^=\"WC_OrderItemDetailsSummary\"] > div[id^=\"WC_OrderItemDetailsSummary\"] > img','src','regex','[a-z]{2,3}\\\/(?:[0-9]{3,}\\\/[0-9]{3,}\\\/)?\\d{5,}');};}();
+terms['cart']['pe_d385ac0155c3d0bf55005af237801a5a'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#box > div#WC_OrderShippingBillingConfirmationPage_div_13 > div#shipping > div#OrderConfirmPagingDisplay > div#order_details > div.orders-wrap > div > div#SingleShipment_rowHeader_product1 > div#WC_OrderItemDetailsSummaryf_div_2_1 > a','innerText','none','');};}();
+terms['cart']['pe_e0604916b5714d4c89c9836ca5f9cfc3'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#WC_ShipmentDisplay_div_17 > div.summary_title','innerText','none','');};}();
+terms['cart']['pe_e67f1f114196d86e82fe48bbd3c1fd76'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#shipping > div.col-xs-12.col-md-8 > div#OrderConfirmPagingDisplay > div#order_details > div> div > div > div > span.little_title','innerText','after',':');};}();
+terms['cart']['pe_ed0f0e81d474967f23543c80529c3608'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#shipping > div.col-xs-12.col-md-8 > div#OrderConfirmPagingDisplay > div#order_details > div > div > div > div.precio > span.price','innerText','after','$');};}();
+terms['cart']['pe_f7e2935daca815309accc676452674ed'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#shipping > div.col-xs-12.col-md-8 > div#OrderConfirmPagingDisplay > div#order_details > div > div > div> img','outerHTML','regex','[0-9][0-9][0-9][0-9][0-9][0-9][0-9]');};}();
+terms['click']['pe_145696352f7d14a46011ea77eb530068'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('span#MiniShopCartAddedProdQty_','innerText','after','Cantidad: ');};}();
+terms['click']['pe_77ebab8bc3e5e6231728ef7cb2ec447c'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('a#GotoCartButton2','innerText','none','');};}();
+terms['find']['pe_0a1c33469b27edfa2d6318152e3ba88d'] = com_sas_ci_acs._ob_dom.findElement('a#singleOrderSummary');
+terms['find']['pe_3f719721707a5e1afb6256900e351032'] = com_sas_ci_acs._ob_dom.findElement('div[id=\'contentRecommendationWidget_3_-1012_3074457345618302504\'] > div.left_espot > div.left_espot > div.row.cards-container-material > div.col-xs-12.col-md-4');
+terms['find']['pe_5817b20c53b530d588fdb1cec68f87da'] = com_sas_ci_acs._ob_dom.findElement('p#availabilityShopAction > span.unavailable');
+terms['find']['pe_699cce87a0d1b39253a2cc750aab7fbd'] = com_sas_ci_acs._ob_dom.findElement('input#receivingUser');
+terms['find']['pe_77358986834e95698630184eaaca9735'] = com_sas_ci_acs._ob_dom.findElement('div#ShopCartPagingDisplay > div.row.orden-total > div.col-xs-12.col-sm-6.resumen_pagar.text-center > button.btn.btn-primary');
+terms['find']['pe_9203717a806d480aaf3466da3a7914c5'] = com_sas_ci_acs._ob_dom.findElement('div[id=\'contentRecommendationWidget_3_-1012_3074457345618302004\'] > div.left_espot > div.bloqueComercial.row > div.col-xs-12.col-md-4.bloqueGDE.cyber > a.white > img.lazyImg.lazyImg-loaded');
+terms['find']['pe_a4af5c455b8af875c5c7d3eb58f98b85'] = com_sas_ci_acs._ob_dom.findElement('#WC_OrderShippingBillingConfirmationPage_div_14 > div.summary_title.entregaTitulo');
+terms['find']['pe_b1cb74b4c209c0039f0f6f3d578f3f92'] = com_sas_ci_acs._ob_dom.findElement('div#WC_OrderShippingBillingConfirmationPage_div_4 > h1');
+terms['find']['pe_c29e938f8f72eed422aeccf618b573ef'] = com_sas_ci_acs._ob_dom.findElement('div#contentCarousel_1_1003_1302 > ul.swiper-wrapper > li.swiper-slide.swiper-slide-active > div.left_espot > div.row.slider-fullimg > div.col-xs-12 > a.slider_principal > picture > img');
+terms['find']['pe_cad331bba001130b4782d507ac039c50'] = com_sas_ci_acs._ob_dom.findElement('div#add2CartBtn');
+terms['find']['pe_cda938253e167f8febd8b025c4d8a8e2'] = com_sas_ci_acs._ob_dom.findElement('select#listPaymentMethod');
+terms['find']['pe_e978e05babeb660d6890f672720830dc'] = com_sas_ci_acs._ob_dom.findElement('div.recogerTiendaMsj');
+terms['find']['pe_fbfdda8fe551a2a7ec939742c38a12b3'] = com_sas_ci_acs._ob_dom.findElement('div#contentWrapper');
+terms['load']['pe_145696352f7d14a46011ea77eb530068'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('span#MiniShopCartAddedProdQty_','innerText','after','Cantidad: ');};}();
+terms['load']['pe_250fa84af6dfcf92af9c32e569196a1a'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('#availabilityShopAction > span','innerText','none','');};}();
+terms['load']['pe_271ef7c5146140db2addb416e3b61eb2'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('p#availabilityShopAction > span.available','innerText','none','');};}();
+terms['load']['pe_29a60cfa3bbaabf62f6a8033b1535a6a'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#order_details > div.orders-wrap > div > div[id^=\"SingleShipment_rowHeader\"] > div[id^=\"WC_OrderItemDetailsSummary\"] > a','innerText','none','');};}();
+terms['load']['pe_3e2f9ee1b327abc83551e68133cd049e'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('table#storelocator_table:nth-child(2) > tbody:nth-child(2) > tr:nth-child(1) > td:nth-child(1) > span.shop_name:nth-child(1)','innerText','none','');};}();
+terms['load']['pe_486c0857c654f8066a42f9e1e0a928e9'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('span[id^=\"product_PARTNUMBER\"]','innerText','none','');};}();
+terms['load']['pe_4de436e9794125be7e4ba8ae26fa4816'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#WC_MyAccountCenterLinkDisplay_div_6:nth-child(2) > div.info_table.clearfix > div.col-xs-12:nth-child(3) > div.info_content:nth-child(2)','innerText','none','');};}();
+terms['load']['pe_58629842765d85dd2a5fad811b82ecbb'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('#PageHeading_2477 > h1','innerText','none','');};}();
+terms['load']['pe_5c88a22c28b32dc096d31fddc55be43e'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div.tam_normal > p.discountRibbon','innerText','none','');};}();
+terms['load']['pe_604ccfd806a494b9ca256e0680bcaa2c'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#container_10101:nth-child(1) > div.row:nth-child(2) > div.col-sm-12.bloque-beneficios > div[id=\'contentRecommendationWidget_3_-1012_3074457345618302504\']:nth-child(2) > div.left_espot > div.left_espot:nth-child(2) > div.row.cards-container-material > div.col-xs-12.col-md-4:nth-child(1) > div.card-material > a > img.lazyImg.lazyImg-loaded:nth-child(1)','outerHTML','between',' alt=\"__&&__\"');};}();
+terms['load']['pe_64b0fe44fb42e1fb6ab2f2fc6fbba3b7'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('input[id^=\"quantity\"]','innerText','none','');};}();
+terms['load']['pe_6839e51773c5bbdb398f8b7ee0f597db'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#widget_breadcrumb','innerText','between','Inicio\/__&&__\/');};}();
+terms['load']['pe_75253ea92f75e982a1a94a835d8e5f1e'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div[id^=\"quantity\"]','innerText','none','');};}();
+terms['load']['pe_81b95ad355a387deb20e10f794f0bda2'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('span[id^=\'offerPrice\']','innerText','after','$');};}();
+terms['load']['pe_8abfbe8aaad59640f3cf834b3f74c6b5'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('p[id^=\"availabilityShopAction\"]','innerText','none','');};}();
+terms['load']['pe_b38e3667266a7a04f57b885371b8410c'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#widget_breadcrumb > ul > li.current','innerText','none','');};}();
+terms['load']['pe_bf29800364f38a73c0677ab64e33b808'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('#ci_espot_21401_Widget_ContentRecommendation_801_21401 > div > div.beneficios-product.beneficios-marketplace > ul > li.beneficio_envio > div:nth-child(2) > p:nth-child(2)','innerText','none','');};}();
+terms['load']['pe_bfe65dbdb267c7df65c0db4327b191f0'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('span[id^=\"product_SKU\"]','id','none','');};}();
+terms['load']['pe_c0146eea502e5e974369b11c75c56909'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('span[id^=\"listPrice\"]','innerText','none','');};}();
+terms['load']['pe_c2b77434d3efdd73d852360db76fa857'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('#IntelligentOfferCategoryId','innerText','none','');};}();
+terms['load']['pe_d09a8d7c11d2b0153a1392af99c13274'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#widget_breadcrumb > ul > li:nth-child(2)','innerText','none','');};}();
+terms['load']['pe_d0bfe2ea2577388861cc829e53873cc3'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('p[id^=\"discountRibbonCoppelRegion\"]','innerText','none','');};}();
+terms['load']['pe_e398a4ef3c49e00aea2ba2c1d69e0996'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div.avaible_text > div > p > span','innerText','none','');};}();
+terms['load']['pe_e4fc202fd48be5c2420586449a7bd916'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('span[id^=\"offerPrice\"]','innerText','none','');};}();
+terms['load']['pe_e95fc1c8d27a0bd2d44daa109a79b599'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('span[id^=\"offerPrice\"]','innerText','after','$');};}();
+terms['load']['pe_f758300f2c26dbe709b2dcc8344aa05b'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#price_display_128681 > div > div > div.tam_normal > p.discountRibbon','innerText','none','');};}();
+terms['load']['pe_f9c969ff490f1b446a58ebdbf0cdeb41'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#container_10101:nth-child(1) > div.row:nth-child(2) > div.col-sm-12.bloque-beneficios > div[id=\'contentRecommendationWidget_3_-1012_3074457345618302504\']:nth-child(2) > div.left_espot > div.left_espot:nth-child(2) > div.row.cards-container-material > div.col-xs-12.col-md-4:nth-child(1) > div.card-material > a > p:nth-child(2)','innerText','after','Ver ');};}();
+terms['tsp']['pe_53662ab20f4b95fe94d94c746bd61124'] = '#add2CartBtn';
+terms['tsp']['pe_964b6b9583b89a26b48748182cb82917'] = 'a#add2CartBtn';
+
+    return terms;
+}
+com_sas_ci_acs._ob_cart_configuration.prototype.getCartConfig = function()
+{
+   var cart = {};
+
+
+
+
+    return cart;
+}
+com_sas_ci_acs._ob_cart_configuration.prototype.getCheckoutConfig = function()
+{
+   var cart = {};
+
+
+
+
+    return cart;
+}
+com_sas_ci_acs._ob_cart_configuration.prototype.getPurchaseConfig = function()
+{
+   var cart = {};
+
+cart['558f53ba-4d65-4b37-a565-eab4af9483d6'] = {};
+cart['558f53ba-4d65-4b37-a565-eab4af9483d6']['name'] = 'Purchase View New TEST 8 - In Store';
+cart['558f53ba-4d65-4b37-a565-eab4af9483d6']['type'] = 'purchase';
+cart['558f53ba-4d65-4b37-a565-eab4af9483d6']['selector'] = 'div#order_details > div.orders-wrap';
+cart['558f53ba-4d65-4b37-a565-eab4af9483d6']['item'] = {};
+cart['558f53ba-4d65-4b37-a565-eab4af9483d6']['item']['SKU_1'] = [{s: 'div#box > div#WC_OrderShippingBillingConfirmationPage_div_13 > div#shipping > div#OrderConfirmPagingDisplay > div#order_details > div.orders-wrap > div > div#SingleShipment_rowHeader_product1 > div#WC_OrderItemDetailsSummaryf_div_2_1 > div#WC_OrderItemDetailsSummaryf_div_1_1 > img', a: 'src', f: 'regex', p: '[0-9][0-9][0-9][0-9][0-9][0-9][0-9]'}];
+cart['558f53ba-4d65-4b37-a565-eab4af9483d6']['item']['NombreProducto'] = [{s: 'div#box > div#WC_OrderShippingBillingConfirmationPage_div_13 > div#shipping > div#OrderConfirmPagingDisplay > div#order_details > div.orders-wrap > div > div#SingleShipment_rowHeader_product1 > div#WC_OrderItemDetailsSummaryf_div_2_1 > a', a: 'innerText'}];
+cart['558f53ba-4d65-4b37-a565-eab4af9483d6']['item']['Cart_Items_Number'] = [{s: 'div#WC_OrderShippingBillingConfirmationPage_div_14 > div:nth-child(2) > p', a: 'innerText', f: 'regex', p: '\\((.+)\\)'}];
+cart['558f53ba-4d65-4b37-a565-eab4af9483d6']['item']['Store_Address'] = [{s: 'div#WC_OrderShippingBillingConfirmationPage_div_14 > p:nth-child(4)', a: 'innerText'}];
+cart['558f53ba-4d65-4b37-a565-eab4af9483d6']['item']['delivery_type'] = [{s: 'div#WC_OrderShippingBillingConfirmationPage_div_14:nth-child(1) > div.summary_title:nth-child(2)', a: 'innerText'}];
+cart['558f53ba-4d65-4b37-a565-eab4af9483d6']['item']['cartitem_count'] = [{s: 'div#WC_OrderShippingBillingConfirmationPage_div_14 > div:nth-child(2) > p', a: 'innerText', f: 'regex', p: '\\d+'}];
+cart['558f53ba-4d65-4b37-a565-eab4af9483d6']['item']['product_name'] = [{s: 'div > div[id^=\"SingleShipment_rowHeader\"] > div[id^=\"WC_OrderItemDetailsSummary\"] > a', a: 'innerText'}];
+cart['558f53ba-4d65-4b37-a565-eab4af9483d6']['item']['product_sku'] = [{s: 'div > div[id^=\"SingleShipment_rowHeader\"] > div[id^=\"WC_OrderItemDetailsSummary\"] > div[id^=\"WC_OrderItemDetailsSummary\"] > img', a: 'src', f: 'regex', p: '[a-z]{2,3}\\\/(?:[0-9]{3,}\\\/[0-9]{3,}\\\/)?\\d{5,}'}];
+cart['558f53ba-4d65-4b37-a565-eab4af9483d6']['item']['product_unit_price_num'] = [{s: 'div > div[id^=\"SingleShipment_rowHeader\"] > div[id^=\"WC_OrderItemDetailsSummary\"] > span.price > span.price', a: 'innerText', f: 'after', p: '$'}];
+cart['558f53ba-4d65-4b37-a565-eab4af9483d6']['item']['product_quantity_num'] = [{s: 'div > div[id^=\"SingleShipment_rowHeader\"] > div[id^=\"WC_OrderItemDetailsSummary\"] > p.item-quantity > span:nth-of-type(2)', a: 'innerText', f: 'after', p: ':'}];
+cart['558f53ba-4d65-4b37-a565-eab4af9483d6']['details'] = true;
+
+
+
+    return cart;
+}
+com_sas_ci_acs._ob_jsvar_configuration.prototype.getConfig = function()
+{
+    var jsVars = {};
+
+jsVars['dataLayer.find(item => item.nd1 === \'PDP\').precioDescuento'] = 'dataLayer.find(item => item.nd1 === \'PDP\').precioDescuento';
+jsVars['dataLayer[19].ecommerce.checkout_option.actionField.option'] = 'dataLayer[19].ecommerce.checkout_option.actionField.option';
+jsVars['dataLayer[1].ecommerce.detail.products[0].id'] = 'dataLayer[1].ecommerce.detail.products[0].id';
+jsVars['dataLayer[1].geo.widget.cd'] = 'dataLayer[1].geo.widget.cd';
+jsVars['dataLayer[1].metodoPago'] = 'dataLayer[1].metodoPago';
+jsVars['dataLayer[3].carritoId'] = 'dataLayer[3].carritoId';
+jsVars['dataLayer[3].carritoMonto'] = 'dataLayer[3].carritoMonto';
+jsVars['dataLayer[3].carritoMontoND'] = 'dataLayer[3].carritoMontoND';
+jsVars['dataLayer[3].ecommerce.checkout.products.length'] = 'dataLayer[3].ecommerce.checkout.products.length';
+jsVars['dataLayer[3].ecommerce.checkout.products[0].name'] = 'dataLayer[3].ecommerce.checkout.products[0].name';
+jsVars['dataLayer[3].ecommerce.checkout.products[0].quantity'] = 'dataLayer[3].ecommerce.checkout.products[0].quantity';
+jsVars['dataLayer[3].ecommerce.checkout.products[1].name'] = 'dataLayer[3].ecommerce.checkout.products[1].name';
+jsVars['dataLayer[9].ecommerce.click.products[0].id'] = 'dataLayer[9].ecommerce.click.products[0].id';
+jsVars['dataLayer[9].ecommerce.click.products[0].name'] = 'dataLayer[9].ecommerce.click.products[0].name';
+jsVars['dataLayer[9].ecommerce.click.products[0].price'] = 'dataLayer[9].ecommerce.click.products[0].price';
+jsVars['localStorage.carritoId'] = 'localStorage.carritoId';
+jsVars['localStorage.carritoMonto'] = 'localStorage.carritoMonto';
+jsVars['localStorage.costoEnvio'] = 'localStorage.costoEnvio';
+jsVars['page_id'] = '';
+
+    return jsVars;
+}
+com_sas_ci_acs._ob_jsvarchange_configuration.prototype.getConfig = function()
+{
+    var jsChangeVars = {};
+
+jsChangeVars['WCParamJS.searchTerm'] = 'WCParamJS.searchTerm';
+    return jsChangeVars;
+}
+com_sas_ci_acs._ob_contentvisible_configuration.prototype.getConfig = function()
+{
+    var contentVars = {};
+
+contentVars['contentChange_pe_0443ce0462c991d9194d3a03a9d72c14'] = 'span#ErrorMessageText';
+contentVars['contentChange_pe_0674c6443d417a10721f58e3b10cf1d9'] = '<div id=\"minishopcart_total\" class=\"showOrderQuantity\">';
+contentVars['contentChange_pe_c1b0e63d7c8b32df793f05a8cb684430'] = 'input#WC_CheckoutLogon_FormInput_logonId';
+contentVars['contentChange_pe_cda938253e167f8febd8b025c4d8a8e2'] = 'select#listPaymentMethod';
+contentVars['contentChange_pe_e1ea5ac82a8287f9ad0fa02bfa493c14'] = 'input#SimpleSearchForm_SearchTerm';
+contentVars['8ce18059-ab78-491d-ab84-6b4903ae4ef1'] = 'span#ErrorMessageText';
+
+    return contentVars;
+}
+com_sas_ci_acs._ob_configure.prototype.getFormConfig = function()
+{
+   var ff = {};
+   ff['nature'] = 'inc';
+
+   ff['obs'] = [];
+   ff['ign'] = [];
+   ff['inc'] = [];
+
+
+ff['nature'] = 'ign';
+
+    return ff;
+}
+com_sas_ci_acs._ob_configure.prototype.isCollectionEnabled = function()
+{
+   var collect = {};
+
+
+collect['clicks'] = 'true';
+collect['contentevents'] = 'true';
+collect['fieldinteractions'] = 'true';
+collect['formsubmits'] = 'true';
+collect['jsvars'] = 'true';
+collect['media'] = 'true';
+collect['mouseovers'] = 'false';
+collect['pageloads'] = 'true';
+
+   collect['pageloads_eventid'] = [];
+   collect['pageloads_eventname'] = [];
+   collect['pageloads_eventtype'] = [];
+   collect['pageloads_eventsubtype'] = [];
+   collect['pageloads_prd_selector'] = [];
+   collect['pageloads_system_type'] = [];
+   collect['formsubmits_eventid'] = [];
+   collect['formsubmits_eventname'] = [];
+   collect['formsubmits_system_type'] = [];
+   collect['formsubmits_elements'] = [];
+   collect['clicks_eventid'] = [];
+   collect['clicks_eventname'] = [];
+   collect['clicks_system_type'] = [];
+   collect['changevar_eventid'] = [];
+   collect['changevar_attributes'] = [];
+   collect['content_eventid'] = [];
+   collect['content_attributes'] = [];
+   collect['pageloads_attributes'] = [];
+   collect['formsubmits_attributes'] = [];
+   collect['clicks_attributes'] = [];
+   collect['event_properties'] = [];
+   collect['clickThrough_system_eventid'] = [];
+   collect['impression_system_eventid'] = [];
+   collect['pageloads_system_eventid'] = [];
+   collect['newsession_system_eventid'] = [];
+   collect['focus_system_eventid'] = [];
+   collect['defocus_system_eventid'] = [];
+   collect['notification_opened_system_eventid'] = [];
+   collect['email_open_system_eventid'] = [];
+   collect['email_send_system_eventid'] = [];
+   collect['email_view_system_eventid'] = [];
+   collect['email_click_system_eventid'] = [];
+   collect['email_hard_bounce_system_eventid'] = [];
+   collect['email_opt-out_system_eventid'] = [];
+   collect['email_spam_system_eventid'] = [];
+   collect['email_reply_system_eventid'] = [];
+   collect['loginevent_attributes'] = [];
+
+collect['clicks_eventid'].push('19f39afb-479d-4995-9ea6-7c2c0a3d8fd1');
+collect['clicks_eventname']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'] = 'Product View( Add to Cart event )';
+collect['clicks_system_type']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'] = 'systemAddToCart';
+collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'] = [];
+collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][0] = [];
+collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][0]['targetSelector'] = 'a#GotoCartButton2';
+collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][1]=[];collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][1]['name']='Departamento';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][1]['cart_att_type']='OTHER';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][1]['selector']='div#widget_breadcrumb';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][1]['attribute']='innerText';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][1]['type']='string';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][1]['filter']='between';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][1]['filterpattern']='Inicio/__&&__/';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][2]=[];collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][2]['name']='AT_PM_PR';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][2]['cart_att_type']='OTHER';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][2]['urlPath']='true';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][2]['attribute']='';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][2]['type']='string';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][2]['filter']='regex';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][2]['filterpattern']='/[a-z][a-z]/';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][3]=[];collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][3]['name']='product_name';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][3]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][3]['jsVariable']='dataLayer[9].ecommerce.click.products[0].name';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][3]['attribute']='';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][3]['type']='string';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][3]['filter']='none';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][3]['filterpattern']='';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][4]=[];collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][4]['name']='product_id';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][4]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][4]['jsVariable']='dataLayer[9].ecommerce.click.products[0].id';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][4]['attribute']='';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][4]['type']='string';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][4]['filter']='regex';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][4]['filterpattern']='[0-9][0-9][0-9][0-9][0-9][0-9][0-9]';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][5]=[];collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][5]['name']='product_sku';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][5]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][5]['jsVariable']='dataLayer[9].ecommerce.click.products[0].id';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][5]['attribute']='';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][5]['type']='string';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][5]['filter']='regex';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][5]['filterpattern']='[0-9][0-9][0-9][0-9][0-9][0-9][0-9]';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][6]=[];collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][6]['name']='product_group';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][6]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][6]['selector']='div#widget_breadcrumb > ul > li.current';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][6]['attribute']='innerText';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][6]['type']='string';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][6]['filter']='none';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][6]['filterpattern']='';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][7]=[];collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][7]['name']='product_unit_price_num';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][7]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][7]['jsVariable']='dataLayer[9].ecommerce.click.products[0].price';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][7]['attribute']='';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][7]['type']='numeric';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][7]['filter']='none';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][7]['filterpattern']='';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][8]=[];collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][8]['name']='product_availability_message';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][8]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][8]['selector']='p#availabilityShopAction > span.available';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][8]['attribute']='innerText';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][8]['type']='string';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][8]['filter']='none';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][8]['filterpattern']='';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][9]=[];collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][9]['name']='product_savings_message';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][9]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][9]['selector']='div#price_display_128681 > div > div > div.tam_normal > p.discountRibbon';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][9]['attribute']='innerText';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][9]['type']='string';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][9]['filter']='none';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][9]['filterpattern']='';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][10]=[];collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][10]['name']='Departamento';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][10]['cart_att_type']='OTHER';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][10]['selector']='div#widget_breadcrumb';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][10]['attribute']='innerText';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][10]['type']='string';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][10]['filter']='between';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][10]['filterpattern']='Inicio/__&&__/';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][11]=[];collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][11]['name']='AT_PM_PR';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][11]['cart_att_type']='OTHER';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][11]['urlPath']='true';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][11]['attribute']='';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][11]['type']='string';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][11]['filter']='regex';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][11]['filterpattern']='/[a-z][a-z]/';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][12]=[];collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][12]['name']='product_name';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][12]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][12]['jsVariable']='dataLayer[9].ecommerce.click.products[0].name';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][12]['attribute']='';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][12]['type']='string';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][12]['filter']='none';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][12]['filterpattern']='';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][13]=[];collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][13]['name']='product_id';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][13]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][13]['jsVariable']='dataLayer[9].ecommerce.click.products[0].id';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][13]['attribute']='';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][13]['type']='string';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][13]['filter']='regex';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][13]['filterpattern']='[0-9][0-9][0-9][0-9][0-9][0-9][0-9]';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][14]=[];collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][14]['name']='product_sku';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][14]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][14]['jsVariable']='dataLayer[9].ecommerce.click.products[0].id';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][14]['attribute']='';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][14]['type']='string';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][14]['filter']='regex';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][14]['filterpattern']='[0-9][0-9][0-9][0-9][0-9][0-9][0-9]';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][15]=[];collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][15]['name']='product_group';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][15]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][15]['selector']='div#widget_breadcrumb > ul > li.current';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][15]['attribute']='innerText';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][15]['type']='string';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][15]['filter']='none';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][15]['filterpattern']='';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][16]=[];collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][16]['name']='product_unit_price_num';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][16]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][16]['jsVariable']='dataLayer[9].ecommerce.click.products[0].price';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][16]['attribute']='';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][16]['type']='numeric';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][16]['filter']='none';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][16]['filterpattern']='';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][17]=[];collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][17]['name']='product_availability_message';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][17]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][17]['selector']='p#availabilityShopAction > span.available';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][17]['attribute']='innerText';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][17]['type']='string';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][17]['filter']='none';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][17]['filterpattern']='';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][18]=[];collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][18]['name']='product_savings_message';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][18]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][18]['selector']='div#price_display_128681 > div > div > div.tam_normal > p.discountRibbon';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][18]['attribute']='innerText';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][18]['type']='string';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][18]['filter']='none';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][18]['filterpattern']='';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][19]=[];collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][19]['name']='product_quantity_num';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][19]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][19]['jsVariable']='dataLayer[3].ecommerce.checkout.products[0].quantity';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][19]['attribute']='';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][19]['type']='numeric';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][19]['filter']='none';collect['clicks_attributes']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][19]['filterpattern']='';collect['event_properties']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'] = [];
+collect['event_properties']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][0]=[];collect['event_properties']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][0]['selectorOnly']='true';collect['event_properties']['19f39afb-479d-4995-9ea6-7c2c0a3d8fd1'][0]['name']='div#productPageAdd2Cart';
+
+collect['email_opt-out_system_eventid'].push('2a7c669c-1db9-4741-a344-3a8492cf20f3');
+
+
+
+collect['email_click_system_eventid'].push('38408f89-b882-4d4c-bf69-14842f70df9a');
+
+
+
+
+
+collect['email_view_system_eventid'].push('48d034b1-c629-411c-af29-68d4f7ee3c9c');
+
+
+
+collect['pageloads_system_eventid'].push('52f17e4b-6d9d-424a-ae65-6afb08d05962');
+
+collect['pageloads_eventid'].push('558f53ba-4d65-4b37-a565-eab4af9483d6');
+collect['pageloads_eventname']['558f53ba-4d65-4b37-a565-eab4af9483d6'] = 'Purchase View New TEST 8 - In Store';
+collect['pageloads_eventtype']['558f53ba-4d65-4b37-a565-eab4af9483d6'] = 'purchase';
+collect['pageloads_prd_selector']['558f53ba-4d65-4b37-a565-eab4af9483d6'] = 'div#order_details > div.orders-wrap';
+collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'] = [];
+collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][0]=[];collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][0]['name']='SKU_1';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][0]['cart_att_type']='OTHER';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][0]['selector']='div#box > div#WC_OrderShippingBillingConfirmationPage_div_13 > div#shipping > div#OrderConfirmPagingDisplay > div#order_details > div.orders-wrap > div > div#SingleShipment_rowHeader_product1 > div#WC_OrderItemDetailsSummaryf_div_2_1 > div#WC_OrderItemDetailsSummaryf_div_1_1 > img';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][0]['attribute']='src';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][0]['type']='string';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][0]['filter']='regex';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][0]['filterpattern']='[0-9][0-9][0-9][0-9][0-9][0-9][0-9]';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][1]=[];collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][1]['name']='NombreProducto';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][1]['cart_att_type']='OTHER';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][1]['selector']='div#box > div#WC_OrderShippingBillingConfirmationPage_div_13 > div#shipping > div#OrderConfirmPagingDisplay > div#order_details > div.orders-wrap > div > div#SingleShipment_rowHeader_product1 > div#WC_OrderItemDetailsSummaryf_div_2_1 > a';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][1]['attribute']='innerText';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][1]['type']='string';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][1]['filter']='none';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][1]['filterpattern']='';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][2]=[];collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][2]['name']='Cart_Items_Number';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][2]['cart_att_type']='OTHER';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][2]['selector']='div#WC_OrderShippingBillingConfirmationPage_div_14 > div:nth-child(2) > p';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][2]['attribute']='innerText';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][2]['type']='string';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][2]['filter']='regex';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][2]['filterpattern']='\\((.+)\\)';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][3]=[];collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][3]['name']='Store_Address';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][3]['cart_att_type']='OTHER';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][3]['selector']='div#WC_OrderShippingBillingConfirmationPage_div_14 > p:nth-child(4)';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][3]['attribute']='innerText';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][3]['type']='string';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][3]['filter']='none';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][3]['filterpattern']='';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][4]=[];collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][4]['name']='cartId';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][4]['cart_att_type']='CART_ATTRIBUTE';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][4]['jsVariable']='localStorage.carritoId';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][4]['attribute']='';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][4]['type']='string';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][4]['filter']='none';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][4]['filterpattern']='';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][5]=[];collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][5]['name']='orderId';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][5]['cart_att_type']='CART_ATTRIBUTE';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][5]['jsVariable']='localStorage.carritoId';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][5]['attribute']='';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][5]['type']='string';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][5]['filter']='none';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][5]['filterpattern']='';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][6]=[];collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][6]['name']='totalCost_num';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][6]['cart_att_type']='CART_ATTRIBUTE';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][6]['jsVariable']='localStorage.carritoMonto';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][6]['attribute']='';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][6]['type']='numeric';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][6]['filter']='none';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][6]['filterpattern']='';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][7]=[];collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][7]['name']='shippingCost_num';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][7]['cart_att_type']='CART_ATTRIBUTE';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][7]['jsVariable']='localStorage.costoEnvio';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][7]['attribute']='';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][7]['type']='numeric';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][7]['filter']='none';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][7]['filterpattern']='';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][8]=[];collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][8]['name']='paymentType';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][8]['cart_att_type']='CART_ATTRIBUTE';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][8]['jsVariable']='dataLayer[1].metodoPago';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][8]['attribute']='';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][8]['type']='string';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][8]['filter']='none';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][8]['filterpattern']='';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][9]=[];collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][9]['name']='deliveryType';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][9]['cart_att_type']='CART_ATTRIBUTE';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][9]['selector']='div#WC_OrderShippingBillingConfirmationPage_div_14:nth-child(1) > div.summary_title:nth-child(2)';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][9]['attribute']='innerText';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][9]['type']='string';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][9]['filter']='none';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][9]['filterpattern']='';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][10]=[];collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][10]['name']='cartitem_count';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][10]['cart_att_type']='CART_ATTRIBUTE';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][10]['selector']='div#WC_OrderShippingBillingConfirmationPage_div_14 > div:nth-child(2) > p';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][10]['attribute']='innerText';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][10]['type']='numeric';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][10]['filter']='regex';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][10]['filterpattern']='\\d+';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][11]=[];collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][11]['name']='product_name';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][11]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][11]['selector']='div#order_details > div.orders-wrap > div > div[id^="SingleShipment_rowHeader"] > div[id^="WC_OrderItemDetailsSummary"] > a';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][11]['attribute']='innerText';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][11]['type']='string';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][11]['filter']='none';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][11]['filterpattern']='';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][12]=[];collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][12]['name']='product_sku';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][12]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][12]['selector']='div#order_details > div.orders-wrap > div > div[id^="SingleShipment_rowHeader"] > div[id^="WC_OrderItemDetailsSummary"] > div[id^="WC_OrderItemDetailsSummary"] > img';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][12]['attribute']='src';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][12]['type']='string';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][12]['filter']='regex';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][12]['filterpattern']='[a-z]{2,3}\\/(?:[0-9]{3,}\\/[0-9]{3,}\\/)?\\d{5,}';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][13]=[];collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][13]['name']='product_unit_price_num';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][13]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][13]['selector']='div#order_details > div.orders-wrap > div > div[id^="SingleShipment_rowHeader"] > div[id^="WC_OrderItemDetailsSummary"] > span.price > span.price';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][13]['attribute']='innerText';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][13]['type']='numeric';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][13]['filter']='after';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][13]['filterpattern']='$';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][14]=[];collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][14]['name']='product_quantity_num';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][14]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][14]['selector']='div#order_details > div.orders-wrap > div > div[id^="SingleShipment_rowHeader"] > div[id^="WC_OrderItemDetailsSummary"] > p.item-quantity > span:nth-of-type(2)';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][14]['attribute']='innerText';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][14]['type']='numeric';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][14]['filter']='after';collect['pageloads_attributes']['558f53ba-4d65-4b37-a565-eab4af9483d6'][14]['filterpattern']=':';collect['event_properties']['558f53ba-4d65-4b37-a565-eab4af9483d6'] = [];
+collect['event_properties']['558f53ba-4d65-4b37-a565-eab4af9483d6'][0]=[];collect['event_properties']['558f53ba-4d65-4b37-a565-eab4af9483d6'][0]['pageTitle']='true';collect['event_properties']['558f53ba-4d65-4b37-a565-eab4af9483d6'][0]['name']='Coppel - Confirmación del pedido';collect['event_properties']['558f53ba-4d65-4b37-a565-eab4af9483d6'][1]=[];collect['event_properties']['558f53ba-4d65-4b37-a565-eab4af9483d6'][1]['selectorOnly']='true';collect['event_properties']['558f53ba-4d65-4b37-a565-eab4af9483d6'][1]['name']='div.recogerTiendaMsj';
+
+
+
+
+
+collect['clickThrough_system_eventid'].push('5f8ffaa9-dec6-44bd-8e8b-ffef4fd5f746');
+
+collect['email_send_system_eventid'].push('65cd1e83-a7be-4161-9c5a-b11677657729');
+
+
+
+collect['email_spam_system_eventid'].push('702da7ec-b962-461b-a35b-abdb4662bdee');
+
+collect['clicks_eventid'].push('783b3bfa-35da-47a9-af0b-9918614f0ee5');
+collect['clicks_eventname']['783b3bfa-35da-47a9-af0b-9918614f0ee5'] = 'Add to Cart - Test 2';
+collect['clicks_system_type']['783b3bfa-35da-47a9-af0b-9918614f0ee5'] = 'systemAddToCart';
+collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'] = [];
+collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][0] = [];
+collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][0]['targetSelector'] = '#productPageAdd2Cart';
+collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][1]=[];collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][1]['name']='List_Price';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][1]['cart_att_type']='OTHER';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][1]['selector']='span[id^="listPrice"]';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][1]['attribute']='innerText';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][1]['type']='string';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][1]['filter']='none';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][1]['filterpattern']='';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][2]=[];collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][2]['name']='product_name';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][2]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][2]['selector']='#PageHeading_2477 > h1';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][2]['attribute']='innerText';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][2]['type']='string';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][2]['filter']='none';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][2]['filterpattern']='';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][3]=[];collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][3]['name']='product_id';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][3]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][3]['selector']='span[id^="product_SKU"]';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][3]['attribute']='id';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][3]['type']='string';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][3]['filter']='none';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][3]['filterpattern']='';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][4]=[];collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][4]['name']='product_sku';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][4]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][4]['selector']='span[id^="product_PARTNUMBER"]';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][4]['attribute']='innerText';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][4]['type']='string';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][4]['filter']='none';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][4]['filterpattern']='';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][5]=[];collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][5]['name']='product_group';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][5]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][5]['urlPathLevel']='1';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][5]['attribute']='';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][5]['type']='string';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][5]['filter']='none';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][5]['filterpattern']='';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][6]=[];collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][6]['name']='product_unit_price_num';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][6]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][6]['selector']='span[id^="offerPrice"]';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][6]['attribute']='innerText';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][6]['type']='numeric';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][6]['filter']='none';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][6]['filterpattern']='';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][7]=[];collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][7]['name']='product_availability_message';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][7]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][7]['selector']='p[id^="availabilityShopAction"]';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][7]['attribute']='innerText';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][7]['type']='string';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][7]['filter']='none';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][7]['filterpattern']='';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][8]=[];collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][8]['name']='product_shipping_message';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][8]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][8]['selector']='#ci_espot_21401_Widget_ContentRecommendation_801_21401 > div > div.beneficios-product.beneficios-marketplace > ul > li.beneficio_envio > div:nth-child(2) > p:nth-child(2)';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][8]['attribute']='innerText';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][8]['type']='string';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][8]['filter']='none';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][8]['filterpattern']='';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][9]=[];collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][9]['name']='product_savings_message';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][9]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][9]['selector']='p[id^="discountRibbonCoppelRegion"]';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][9]['attribute']='innerText';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][9]['type']='string';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][9]['filter']='none';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][9]['filterpattern']='';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][10]=[];collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][10]['name']='product_quantity_num';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][10]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][10]['selector']='input[id^="quantity"]';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][10]['attribute']='innerText';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][10]['type']='numeric';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][10]['filter']='none';collect['clicks_attributes']['783b3bfa-35da-47a9-af0b-9918614f0ee5'][10]['filterpattern']='';
+
+collect['pageloads_eventid'].push('79f27029-7a8a-4ae6-8dad-187568845716');
+collect['pageloads_eventname']['79f27029-7a8a-4ae6-8dad-187568845716'] = 'Home Page Coppel';
+collect['pageloads_eventtype']['79f27029-7a8a-4ae6-8dad-187568845716'] = 'homePage';
+collect['event_properties']['79f27029-7a8a-4ae6-8dad-187568845716'] = [];
+collect['event_properties']['79f27029-7a8a-4ae6-8dad-187568845716'][0]=[];collect['event_properties']['79f27029-7a8a-4ae6-8dad-187568845716'][0]['pageTitle']='true';collect['event_properties']['79f27029-7a8a-4ae6-8dad-187568845716'][0]['name']='Coppel.com - Coppel Mejora tu vida';
+
+collect['newsession_system_eventid'].push('7fd61dc3-63a2-41aa-ae5b-e1b509640e78');
+
+collect['impression_system_eventid'].push('8a2f649c-8932-4590-b575-b6774271fc00');
+
+collect['content_eventid'].push('8ce18059-ab78-491d-ab84-6b4903ae4ef1');
+collect['content_attributes']['8ce18059-ab78-491d-ab84-6b4903ae4ef1'] = [];
+collect['content_attributes']['8ce18059-ab78-491d-ab84-6b4903ae4ef1'][0] = [];
+collect['content_attributes']['8ce18059-ab78-491d-ab84-6b4903ae4ef1'][0]['changeRule'] = 'attrAnyToAny';
+collect['content_attributes']['8ce18059-ab78-491d-ab84-6b4903ae4ef1'][0]['from'] = '';
+collect['content_attributes']['8ce18059-ab78-491d-ab84-6b4903ae4ef1'][0]['to'] = '';
+collect['content_attributes']['8ce18059-ab78-491d-ab84-6b4903ae4ef1'][0]['attribute'] = 'innerText';
+
+collect['clicks_eventid'].push('a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b');
+collect['clicks_eventname']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'] = 'Add to Cart - Test 3';
+collect['clicks_system_type']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'] = 'systemAddToCart';
+collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'] = [];
+collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][0] = [];
+collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][0]['targetSelector'] = '#add2CartBtn';
+collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][1]=[];collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][1]['name']='List_Price';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][1]['cart_att_type']='OTHER';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][1]['selector']='span[id^="listPrice"]';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][1]['attribute']='innerText';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][1]['type']='string';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][1]['filter']='none';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][1]['filterpattern']='';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][2]=[];collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][2]['name']='product_name';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][2]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][2]['selector']='#PageHeading_2477 > h1';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][2]['attribute']='innerText';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][2]['type']='string';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][2]['filter']='none';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][2]['filterpattern']='';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][3]=[];collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][3]['name']='product_id';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][3]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][3]['selector']='span[id^="product_SKU"]';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][3]['attribute']='id';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][3]['type']='string';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][3]['filter']='none';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][3]['filterpattern']='';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][4]=[];collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][4]['name']='product_sku';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][4]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][4]['selector']='span[id^="product_PARTNUMBER"]';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][4]['attribute']='innerText';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][4]['type']='string';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][4]['filter']='none';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][4]['filterpattern']='';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][5]=[];collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][5]['name']='product_group';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][5]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][5]['urlPathLevel']='1';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][5]['attribute']='';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][5]['type']='string';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][5]['filter']='none';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][5]['filterpattern']='';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][6]=[];collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][6]['name']='product_unit_price_num';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][6]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][6]['selector']='span[id^="offerPrice"]';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][6]['attribute']='innerText';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][6]['type']='numeric';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][6]['filter']='none';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][6]['filterpattern']='';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][7]=[];collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][7]['name']='product_availability_message';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][7]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][7]['selector']='p[id^="availabilityShopAction"]';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][7]['attribute']='innerText';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][7]['type']='string';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][7]['filter']='none';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][7]['filterpattern']='';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][8]=[];collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][8]['name']='product_shipping_message';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][8]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][8]['selector']='#ci_espot_21401_Widget_ContentRecommendation_801_21401 > div > div.beneficios-product.beneficios-marketplace > ul > li.beneficio_envio > div:nth-child(2) > p:nth-child(2)';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][8]['attribute']='innerText';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][8]['type']='string';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][8]['filter']='none';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][8]['filterpattern']='';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][9]=[];collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][9]['name']='product_savings_message';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][9]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][9]['selector']='p[id^="discountRibbonCoppelRegion"]';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][9]['attribute']='innerText';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][9]['type']='string';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][9]['filter']='none';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][9]['filterpattern']='';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][10]=[];collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][10]['name']='product_quantity_num';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][10]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][10]['selector']='div[id^="quantity"]';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][10]['attribute']='innerText';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][10]['type']='numeric';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][10]['filter']='none';collect['clicks_attributes']['a36a1714-c925-4a0f-a8ac-99c1ea2f0e8b'][10]['filterpattern']='';
+
+collect['pageloads_eventid'].push('c3217485-ca7e-45df-9c47-0cb095b59bb1');
+collect['pageloads_eventname']['c3217485-ca7e-45df-9c47-0cb095b59bb1'] = 'Product View';
+collect['pageloads_eventtype']['c3217485-ca7e-45df-9c47-0cb095b59bb1'] = 'productPageView';
+collect['pageloads_eventsubtype']['c3217485-ca7e-45df-9c47-0cb095b59bb1'] = '';
+collect['pageloads_system_type']['c3217485-ca7e-45df-9c47-0cb095b59bb1'] = 'systemProductView';
+collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'] = [];
+collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][0]=[];collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][0]['name']='Departamento';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][0]['cart_att_type']='OTHER';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][0]['selector']='div#widget_breadcrumb';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][0]['attribute']='innerText';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][0]['type']='string';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][0]['filter']='between';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][0]['filterpattern']='Inicio/__&&__/';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][1]=[];collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][1]['name']='AT_PM_PR';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][1]['cart_att_type']='OTHER';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][1]['urlPath']='true';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][1]['attribute']='';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][1]['type']='string';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][1]['filter']='regex';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][1]['filterpattern']='/[a-z][a-z]/';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][2]=[];collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][2]['name']='product_name';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][2]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][2]['jsVariable']='dataLayer[9].ecommerce.click.products[0].name';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][2]['attribute']='';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][2]['type']='string';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][2]['filter']='none';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][2]['filterpattern']='';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][3]=[];collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][3]['name']='product_id';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][3]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][3]['jsVariable']='dataLayer[9].ecommerce.click.products[0].id';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][3]['attribute']='';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][3]['type']='string';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][3]['filter']='regex';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][3]['filterpattern']='[0-9][0-9][0-9][0-9][0-9][0-9][0-9]';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][4]=[];collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][4]['name']='product_sku';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][4]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][4]['jsVariable']='dataLayer[9].ecommerce.click.products[0].id';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][4]['attribute']='';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][4]['type']='string';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][4]['filter']='regex';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][4]['filterpattern']='[0-9][0-9][0-9][0-9][0-9][0-9][0-9]';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][5]=[];collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][5]['name']='product_group';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][5]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][5]['selector']='div#widget_breadcrumb > ul > li.current';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][5]['attribute']='innerText';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][5]['type']='string';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][5]['filter']='none';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][5]['filterpattern']='';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][6]=[];collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][6]['name']='product_unit_price_num';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][6]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][6]['jsVariable']='dataLayer[9].ecommerce.click.products[0].price';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][6]['attribute']='';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][6]['type']='numeric';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][6]['filter']='none';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][6]['filterpattern']='';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][7]=[];collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][7]['name']='product_availability_message';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][7]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][7]['selector']='p#availabilityShopAction > span.available';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][7]['attribute']='innerText';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][7]['type']='string';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][7]['filter']='none';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][7]['filterpattern']='';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][8]=[];collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][8]['name']='product_savings_message';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][8]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][8]['selector']='div#price_display_128681 > div > div > div.tam_normal > p.discountRibbon';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][8]['attribute']='innerText';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][8]['type']='string';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][8]['filter']='none';collect['pageloads_attributes']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][8]['filterpattern']='';collect['event_properties']['c3217485-ca7e-45df-9c47-0cb095b59bb1'] = [];
+collect['event_properties']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][0]=[];collect['event_properties']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][0]['selectorOnly']='true';collect['event_properties']['c3217485-ca7e-45df-9c47-0cb095b59bb1'][0]['name']='div#productPageAdd2Cart';
+
+collect['clicks_eventid'].push('d6557e38-ba99-4c2d-a007-69d483742ad2');
+collect['clicks_eventname']['d6557e38-ba99-4c2d-a007-69d483742ad2'] = 'Add to Cart - Testv 4';
+collect['clicks_system_type']['d6557e38-ba99-4c2d-a007-69d483742ad2'] = 'systemAddToCart';
+collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'] = [];
+collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][0] = [];
+collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][0]['targetSelector'] = '#add2CartBtn';
+collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][1]=[];collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][1]['name']='List_Price';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][1]['cart_att_type']='OTHER';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][1]['selector']='span[id^="listPrice"]';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][1]['attribute']='innerText';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][1]['type']='string';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][1]['filter']='none';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][1]['filterpattern']='';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][2]=[];collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][2]['name']='product_name';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][2]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][2]['selector']='#PageHeading_2477 > h1';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][2]['attribute']='innerText';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][2]['type']='string';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][2]['filter']='none';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][2]['filterpattern']='';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][3]=[];collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][3]['name']='product_id';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][3]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][3]['selector']='span[id^="product_SKU"]';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][3]['attribute']='id';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][3]['type']='string';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][3]['filter']='none';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][3]['filterpattern']='';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][4]=[];collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][4]['name']='product_sku';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][4]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][4]['selector']='span[id^="product_PARTNUMBER"]';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][4]['attribute']='innerText';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][4]['type']='string';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][4]['filter']='none';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][4]['filterpattern']='';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][5]=[];collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][5]['name']='product_group';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][5]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][5]['urlPathLevel']='1';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][5]['attribute']='';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][5]['type']='string';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][5]['filter']='none';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][5]['filterpattern']='';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][6]=[];collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][6]['name']='product_unit_price_num';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][6]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][6]['selector']='span[id^="offerPrice"]';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][6]['attribute']='innerText';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][6]['type']='numeric';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][6]['filter']='none';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][6]['filterpattern']='';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][7]=[];collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][7]['name']='product_availability_message';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][7]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][7]['selector']='p[id^="availabilityShopAction"]';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][7]['attribute']='innerText';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][7]['type']='string';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][7]['filter']='none';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][7]['filterpattern']='';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][8]=[];collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][8]['name']='product_shipping_message';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][8]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][8]['selector']='#ci_espot_21401_Widget_ContentRecommendation_801_21401 > div > div.beneficios-product.beneficios-marketplace > ul > li.beneficio_envio > div:nth-child(2) > p:nth-child(2)';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][8]['attribute']='innerText';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][8]['type']='string';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][8]['filter']='none';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][8]['filterpattern']='';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][9]=[];collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][9]['name']='product_savings_message';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][9]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][9]['selector']='p[id^="discountRibbonCoppelRegion"]';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][9]['attribute']='innerText';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][9]['type']='string';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][9]['filter']='none';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][9]['filterpattern']='';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][10]=[];collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][10]['name']='product_quantity_num';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][10]['cart_att_type']='CART_PRODUCT_ATTRIBUTE';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][10]['selector']='div[id^="quantity"]';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][10]['attribute']='innerText';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][10]['type']='numeric';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][10]['filter']='none';collect['clicks_attributes']['d6557e38-ba99-4c2d-a007-69d483742ad2'][10]['filterpattern']='';
+
+collect['email_hard_bounce_system_eventid'].push('e7da0871-b763-4417-b4f8-c54a2840c62f');
+
+collect['email_reply_system_eventid'].push('ebea6ac8-c20c-42ab-bfc6-ea926c0a1322');
+
+collect['email_open_system_eventid'].push('f35ab2e9-456f-4925-825d-21e0210b43d3');
+
+collect['notification_opened_system_eventid'].push('fffa8f00-f2f5-4249-a8b7-ceab28a6f38d');
+
+
+    return collect;
+}
+
+com_sas_ci_acs.ob_util.specialClickProcessing=true;
+com_sas_ci_acs.cacheCollect=com_sas_ci_acs._ob_configure.prototype.isCollectionEnabled();com_sas_ci_acs._ob_configure.prototype.isCollectionEnabled=function(){return com_sas_ci_acs.cacheCollect;};
+com_sas_ci_acs.ob_configure.initialize();
